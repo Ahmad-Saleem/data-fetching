@@ -1,6 +1,6 @@
 # data-fetching
 
-Hooks:
+## Hooks:
 
 * useFetch
 * useGet -- comming soon -- 
@@ -11,8 +11,9 @@ Hooks:
 * usePatch  -- comming soon --
 * useOptions  -- comming soon --
 
-# useFetch
+### useFetch
 
+```javascript
 import React from 'react'
 import {RestProvider, useFetch} from 'data-fetching'
 
@@ -39,5 +40,5 @@ function App() {
     </RestProvider>
   );
 }
-
+```
 
