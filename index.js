@@ -1,7 +1,7 @@
-import * as providers from './providers'
-import * as hooks from './hooks'
+import {RestProvider} from './providers'
+import {useFetch} from './hooks'
 
-export default {
-    ...providers,
-    ...hooks,
+export {
+    RestProvider,
+    useFetch
 }
