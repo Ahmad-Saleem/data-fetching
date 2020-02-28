@@ -1,7 +1,3 @@
-import {RestProvider} from './providers'
-import {useFetch} from './hooks'
+'use strict';
 
-export {
-    RestProvider,
-    useFetch
-}
+module.exports = require('./dist/data-fetching.js');

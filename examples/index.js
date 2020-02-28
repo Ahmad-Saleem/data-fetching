@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import {RestProvider, useFetch} from '../'
 
 export default function Examples(){
@@ -24,6 +25,11 @@ function View(){
         </div>
     )
 }
+
+ReactDOM.render(
+    <Examples />,
+    document.getElementById('app'),
+);
 
 
 
