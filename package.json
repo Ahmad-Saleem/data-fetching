@@ -1,0 +1,35 @@
+{
+  "name": "data-fetching",
+  "version": "0.0.1",
+  "description": "Custom React hooks for data fetching and mutation from mutiple data source (REST, Graphql)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmad-Saleem/data-fetching.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "fetch",
+    "data.",
+    "grapql",
+    "rest",
+    "api",
+    "redux",
+    "caching",
+    "redux-thunk",
+    "redux-saga"
+  ],
+  "author": "Ahmad Saleem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmad-Saleem/data-fetching/issues"
+  },
+  "homepage": "https://github.com/Ahmad-Saleem/data-fetching#readme",
+  "dependencies": {
+    "react": "^16.13.0"
+  }
+}
