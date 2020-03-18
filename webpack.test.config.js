@@ -2,13 +2,14 @@ var path = require('path');
 var HtmlWebpackPlugin =  require('html-webpack-plugin');
 
 module.exports = {
-    entry : './main.js',
+    mode: 'development',
+    entry : './examples/index.js',
     output : {
-        path : path.resolve(__dirname , './dist'),
-        filename: 'data-fetching.js',
+        path : path.resolve(__dirname , './examples'),
+        filename: 'bundle.js',
         library: 'data-fetching',      
         libraryTarget: 'umd',      
-        publicPath: '/dist/',      
+        publicPath: '/examples/',      
         umdNamedDefine: true  
     },
     module : {
@@ -17,15 +18,14 @@ module.exports = {
             {test : /\.css$/, use:['style-loader', 'css-loader']}
         ]
     },
-    mode:'development',
-    // plugins : [
-    //     new HtmlWebpackPlugin ({
-    //         template : 'examples/index.html'
-    //     })
-    // ],
+    plugins : [
+        new HtmlWebpackPlugin ({
+            template : 'index.html'
+        })
+    ],
     resolve: {      
         alias: {          
-            'react': path.resolve(__dirname, './node_modules/react'),
+          'react': path.resolve(__dirname, './node_modules/react'),
           'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
         }  
     },  
